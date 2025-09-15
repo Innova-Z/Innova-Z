@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Consulting - Innova-Z</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --primary-color: #FF7F7F; /* Light Red */
+            --secondary-color: #FFFFFF; /* White */
+            --light-bg: #F8F8F8; /* Very Light Gray */
+            --dark-text: #212121; /* Dark Gray for text */
+            --card-bg: #FFFFFF; /* White card background */
+            --accent-glow: 0 0 10px rgba(255, 127, 127, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+            --hover-glow: 0 0 15px rgba(255, 127, 127, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .background-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #FFF0F0, #FFFFFF); /* Very subtle light red to white gradient */
+            z-index: -1;
+            opacity: 0.8;
+            animation: background-pulse 20s infinite alternate;
+        }
+
+        @keyframes background-pulse {
+            0% { transform: scale(1.0); }
+            100% { transform: scale(1.1); }
+        }
+
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: var(--dark-text);
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 8px 15px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 127, 127, 0.3);
+            transition: transform 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-link:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--accent-glow);
+        }
+
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle, rgba(255, 127, 127, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #FF4136, #FF7F7F); /* Darker to lighter red gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text-pulse 3s infinite;
+        }
+
+        @keyframes text-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: var(--dark-text);
+        }
+
+        section {
+            padding: 80px 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 10px;
+            color: var(--dark-text);
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, #FF4136, #FF7F7F);
+            border-radius: 2px;
+        }
+
+        .feature-grid, .timeline {
+            display: grid;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .timeline {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            right: 5%;
+            height: 2px;
+            background: rgba(0, 0, 0, 0.1); /* Subtle dark line */
+            z-index: -1;
+        }
+
+        .feature-card, .step {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 127, 127, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Very light shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover, .step:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--hover-glow);
+        }
+
+        .feature-card .icon, .step .icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            background: -webkit-linear-gradient(right, #FF4136, #FF7F7F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-card:hover .icon, .step:hover .icon {
+            transform: rotateY(360deg);
+        }
+
+        .feature-card h3, .step h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--dark-text);
+        }
+
+        .cta {
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2rem;
+            background: linear-gradient(to right, #FF4136, #FF7F7F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            background: linear-gradient(to right, #FF4136, #FF7F7F);
+            color: #FFFFFF;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-glow);
+        }
+
+        .reveal {
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    } else {
+                        entry.target.classList.remove('active');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.reveal').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <header class="hero">
+        <h1>Legal Consulting</h1>
+        <p>Navigating the legal landscape with confidence.</p>
+    </header>
+
+    <div class="background-animation"></div>
+
+    <section class="about reveal">
+        <h2>About Legal Consulting</h2>
+        <p>In today's fast-paced business world, understanding and complying with legal requirements is essential for long-term success. **Legal consulting** is about being proactive, not reactive. At Innova-Z, we provide expert legal guidance to help you make informed decisions, mitigate risks, and ensure your business operations are fully compliant. Our consultants specialize in various areas of corporate and business law, offering tailored advice that saves you time and prevents costly legal issues down the road. We are your trusted partner in building a secure and legally sound foundation for your business.</p>
+    </section>
+
+    <section class="features reveal">
+        <h2>Key Areas of Expertise</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-file-contract icon"></i>
+                <h3>Contracts & Agreements</h3>
+                <p>We draft, review, and negotiate a wide range of legal documents, including non-disclosure agreements, service agreements, and vendor contracts.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-landmark-dome icon"></i>
+                <h3>Regulatory Compliance</h3>
+                <p>We provide guidance on navigating complex regulations and ensure your business adheres to all relevant legal standards to avoid penalties.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-user-lock icon"></i>
+                <h3>Intellectual Property</h3>
+                <p>We help you protect your valuable intellectual property, including trademarks, copyrights, and trade secrets, securing your innovations and brand identity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process reveal">
+        <h2>Our Process</h2>
+        <div class="timeline">
+            <div class="step">
+                <i class="fa-solid fa-handshake icon"></i>
+                <h3>Step 1: Initial Consultation</h3>
+                <p>We begin with a confidential discussion to understand your business, its legal challenges, and your specific needs.</p>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-magnifying-glass-chart icon"></i>
+                <h3>Step 2: Analysis & Strategy</h3>
+                <p>Our experts analyze your situation and develop a clear, actionable legal strategy to address your concerns.</p>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-gavel icon"></i>
+                <h3>Step 3: Implementation</h3>
+                <p>We assist in executing the legal strategy, from drafting documents to advising on compliance measures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta reveal">
+        <h2>Ready to Secure Your Business?</h2>
+        <a href="#about" class="btn">Get Started</a>
+    </section>
+</body>
+</html>
