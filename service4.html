@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Campaigns - Innova-Z</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Validate your startup idea with Innova-Z through market research, user interviews, competitive analysis, and data-driven strategies.">
+    <meta name="keywords" content="idea validation, startup validation, market research, competitive analysis, user interviews, Innova-Z">
+    <link rel="canonical" href="https://www.innova-z.com/idea-validation.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Idea Validation - Innova-Z">
+    <meta property="og:description" content="Transform your idea into a validated, market-ready solution with Innova-Z’s research-driven validation process.">
+    <meta property="og:image" content="https://www.innova-z.com/og-banner.webp">
+    <meta property="og:url" content="https://www.innova-z.com/idea-validation.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Idea Validation - Innova-Z">
+    <meta name="twitter:description" content="Validate your business idea with market research, interviews and data-driven insights by Innova-Z.">
+    <meta name="twitter:image" content="https://www.innova-z.com/og-banner.webp">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
         :root {
-            --primary-color: #FF7F7F; /* Light Red */
-            --secondary-color: #FFFFFF; /* White */
-            --light-bg: #F8F8F8; /* Very Light Gray */
-            --dark-text: #212121; /* Dark Gray for text */
-            --card-bg: #FFFFFF; /* White card background */
+            --primary-color: #FF7F7F;
+            --secondary-color: #FFFFFF;
+            --light-bg: #F8F8F8;
+            --dark-text: #212121;
+            --card-bg: #FFFFFF;
             --accent-glow: 0 0 10px rgba(255, 127, 127, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
             --hover-glow: 0 0 15px rgba(255, 127, 127, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
         }
 
         * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0; box-sizing: border-box;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             font-family: 'Poppins', sans-serif;
@@ -38,11 +51,9 @@
 
         .background-animation {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #FFF0F0, #FFFFFF); /* Very subtle light red to white gradient */
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: linear-gradient(45deg, #FFF0F0, #FFFFFF);
             z-index: -1;
             opacity: 0.8;
             animation: background-pulse 20s infinite alternate;
@@ -55,17 +66,15 @@
 
         .back-link {
             position: fixed;
-            top: 20px;
-            left: 20px;
+            top: 20px; left: 20px;
             color: var(--dark-text);
+            background: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            font-size: 1rem;
             padding: 8px 15px;
             border-radius: 50px;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 127, 127, 0.3);
-            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+            transition: .3s;
             z-index: 100;
         }
 
@@ -76,19 +85,17 @@
 
         .hero {
             height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
             text-align: center;
             padding: 0 20px;
-            background: radial-gradient(circle, rgba(255, 127, 127, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            background: radial-gradient(circle, rgba(255, 127, 127, 0.1) 0%, transparent 70%);
         }
 
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 700;
-            background: linear-gradient(to right, #FF4136, #FF7F7F); /* Darker to lighter red gradient */
+            background: linear-gradient(to right, #FF4136, #FF7F7F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: text-pulse 3s infinite;
@@ -100,12 +107,6 @@
             100% { transform: scale(1); }
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: var(--dark-text);
-        }
-
         section {
             padding: 80px 5%;
             max-width: 1200px;
@@ -114,24 +115,19 @@
 
         h2 {
             font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
             text-align: center;
             position: relative;
+            margin-bottom: 20px;
             padding-bottom: 10px;
-            color: var(--dark-text);
         }
 
         h2::after {
-            content: '';
+            content: "";
             position: absolute;
-            bottom: 0;
-            left: 50%;
+            bottom: 0; left: 50%;
             transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
+            width: 60px; height: 4px;
             background: linear-gradient(to right, #FF4136, #FF7F7F);
-            border-radius: 2px;
         }
 
         .feature-grid, .timeline {
@@ -150,14 +146,19 @@
         }
 
         .timeline::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 50%;
-            left: 5%;
-            right: 5%;
+            left: 5%; right: 5%;
             height: 2px;
-            background: rgba(0, 0, 0, 0.1); /* Subtle dark line */
-            z-index: -1;
+            background: rgba(0,0,0,0.1);
+        }
+
+        /* ✅ Mobile timeline improvement */
+        @media(max-width: 600px) {
+            .timeline::before {
+                display: none;
+            }
         }
 
         .feature-card, .step {
@@ -165,9 +166,9 @@
             padding: 40px;
             border-radius: 15px;
             text-align: center;
-            border: 1px solid rgba(255, 127, 127, 0.2);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Very light shadow */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(255,127,127,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: .3s;
         }
 
         .feature-card:hover, .step:hover {
@@ -175,102 +176,92 @@
             box-shadow: var(--hover-glow);
         }
 
-        .feature-card .icon, .step .icon {
+        .icon {
             font-size: 3rem;
-            color: var(--primary-color);
             margin-bottom: 15px;
             background: -webkit-linear-gradient(right, #FF4136, #FF7F7F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            transition: transform 0.5s ease;
+            transition: .5s;
         }
 
         .feature-card:hover .icon, .step:hover .icon {
             transform: rotateY(360deg);
         }
 
-        .feature-card h3, .step h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--dark-text);
-        }
-
-        .cta {
-            text-align: center;
-        }
-
-        .cta h2 {
-            font-size: 2rem;
-            background: linear-gradient(to right, #FF4136, #FF7F7F);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        .cta { text-align: center; }
 
         .btn {
-            display: inline-block;
             padding: 12px 30px;
-            margin-top: 20px;
             border-radius: 50px;
-            text-decoration: none;
             background: linear-gradient(to right, #FF4136, #FF7F7F);
-            color: #FFFFFF;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: .3s;
         }
 
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--hover-glow);
-        }
+        .btn:hover { transform: translateY(-5px); }
 
         .reveal {
-            position: relative;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease, transform 1s ease;
+            opacity: 0; transform: translateY(20px);
+            transition: 1s;
         }
 
         .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
+            opacity: 1; transform: translateY(0);
         }
     </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Innova-Z",
+  "url": "https://www.innova-z.com",
+  "logo": "https://www.innova-z.com/logo.jpg",
+  "description": "Digital agency offering branding, marketing, websites, tech, and influencer collaborations.",
+  "areaServed": "Worldwide"
+}
+</script>
+
+   <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing Campaigns",
+  "description": "Targeted digital marketing campaigns including content planning, promotion strategy, and engagement growth.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Innova-Z",
+    "url": "https://www.innova-z.com",
+    "logo": "https://www.innova-z.com/logo.jpg"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": "Digital Marketing Campaign Execution",
+  "url": "https://www.innova-z.com/service4.html"
+}
+</script>
+
 </head>
+
 <body>
+
+    <!-- Scroll reveal JS -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    } else {
-                        entry.target.classList.remove('active');
-                    }
+                    entry.target.classList.toggle('active', entry.isIntersecting);
                 });
-            }, {
-                threshold: 0.1
-            });
+            }, { threshold: 0.1 });
 
-            document.querySelectorAll('.reveal').forEach(element => {
-                observer.observe(element);
-            });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         });
     </script>
-    <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+    <a href="index.html#services" class="back-link">&larr; Back to Home</a>
+
     <header class="hero">
         <h1>Marketing Campaigns</h1>
         <p>Driving growth with data-driven strategies.</p>
@@ -278,56 +269,61 @@
 
     <div class="background-animation"></div>
 
-    <section class="about reveal">
-        <h2>About Marketing Campaigns</h2>
-        <p>In today's competitive landscape, a powerful marketing campaign is essential to cutting through the noise and connecting with your audience. At Innova-Z, we specialize in creating strategic, multi-channel campaigns that drive results. Our approach combines creative content with data-driven insights to ensure every dollar you spend contributes to measurable growth. Whether you're launching a new product, increasing brand awareness, or generating leads, we develop campaigns that are not only impactful but also scalable for long-term success.</p>
-    </section>
+    <!-- ✅ Added MAIN TAG -->
+    <main>
 
-    <section class="features reveal">
-        <h2>Our Campaign Services</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <i class="fa-solid fa-bullhorn icon"></i>
-                <h3>Digital Advertising</h3>
-                <p>We manage paid ad campaigns across platforms like Google, social media, and industry-specific networks to maximize your reach and ROI.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fa-solid fa-envelope-open-text icon"></i>
-                <h3>Email Marketing</h3>
-                <p>We design and execute targeted email campaigns to nurture leads, engage your existing customer base, and drive repeat business.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fa-solid fa-share-nodes icon"></i>
-                <h3>Social Media Strategy</h3>
-                <p>We develop content strategies and manage your social media presence to build a strong community and amplify your brand's message.</p>
-            </div>
-        </div>
-    </section>
+        <section class="about reveal">
+            <h2>About Marketing Campaigns</h2>
+            <p>In today's competitive landscape, a powerful marketing campaign is essential to cutting through the noise and connecting with your audience. At Innova-Z, we specialize in creating strategic, multi-channel campaigns that drive results. Our approach combines creative content with data-driven insights to ensure every dollar you spend contributes to measurable growth. Whether you're launching a new product, increasing brand awareness, or generating leads, we develop campaigns that are not only impactful but also scalable for long-term success.</p>
+        </section>
 
-    <section class="process reveal">
-        <h2>Our Process</h2>
-        <div class="timeline">
-            <div class="step">
-                <i class="fa-solid fa-lightbulb icon"></i>
-                <h3>Step 1: Planning</h3>
-                <p>We define your goals, target audience, and key performance indicators (KPIs) for the campaign.</p>
+        <section class="features reveal">
+            <h2>Our Campaign Services</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-bullhorn icon"></i>
+                    <h3>Digital Advertising</h3>
+                    <p>We manage paid ad campaigns across platforms like Google, social media, and industry-specific networks to maximize your reach and ROI.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-envelope-open-text icon"></i>
+                    <h3>Email Marketing</h3>
+                    <p>We design and execute targeted email campaigns to nurture leads, engage your existing customer base, and drive repeat business.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-share-nodes icon"></i>
+                    <h3>Social Media Strategy</h3>
+                    <p>We develop content strategies and manage your social media presence to build a strong community and amplify your brand's message.</p>
+                </div>
             </div>
-            <div class="step">
-                <i class="fa-solid fa-pen-nib icon"></i>
-                <h3>Step 2: Execution</h3>
-                <p>We create compelling content and launch the campaign across selected channels.</p>
-            </div>
-            <div class="step">
-                <i class="fa-solid fa-chart-line icon"></i>
-                <h3>Step 3: Optimization</h3>
-                <p>We continuously monitor performance, analyze data, and refine the campaign for maximum effectiveness.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta reveal">
-        <h2>Ready to Grow Your Brand?</h2>
-        <a href="index.html#contact" class="btn">Get Started</a>
-    </section>
+        <section class="process reveal">
+            <h2>Our Process</h2>
+            <div class="timeline">
+                <div class="step">
+                    <i class="fa-solid fa-lightbulb icon"></i>
+                    <h3>Step 1: Planning</h3>
+                    <p>We define your goals, target audience, and key performance indicators (KPIs) for the campaign.</p>
+                </div>
+                <div class="step">
+                    <i class="fa-solid fa-pen-nib icon"></i>
+                    <h3>Step 2: Execution</h3>
+                    <p>We create compelling content and launch the campaign across selected channels.</p>
+                </div>
+                <div class="step">
+                    <i class="fa-solid fa-chart-line icon"></i>
+                    <h3>Step 3: Optimization</h3>
+                    <p>We continuously monitor performance, analyze data, and refine the campaign for maximum effectiveness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta reveal">
+            <h2>Ready to Grow Your Brand?</h2>
+            <a href="index.html#contact" class="btn">Get Started</a>
+        </section>
+
+    </main>
 </body>
 </html>
