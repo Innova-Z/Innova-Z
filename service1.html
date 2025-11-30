@@ -5,329 +5,390 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idea Validation - Innova-Z</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    <meta name="description" content="Validate your startup idea with Innova-Z through market research, user interviews, competitive analysis, and data-driven strategies.">
+    <meta name="keywords" content="idea validation, startup validation, market research, competitive analysis, user interviews, Innova-Z">
+    <link rel="canonical" href="https://www.innova-z.com/idea-validation.html">
 
-        :root {
-            --primary-color: #FF7F7F; /* Light Red */
-            --secondary-color: #FFFFFF; /* White */
-            --light-bg: #F8F8F8; /* Very Light Gray */
-            --dark-text: #212121; /* Dark Gray for text */
-            --card-bg: #FFFFFF; /* White card background */
-            --accent-glow: 0 0 10px rgba(255, 127, 127, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
-            --hover-glow: 0 0 15px rgba(255, 127, 127, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
-        }
+    <!-- Open Graph -->
+    <meta property="og:title" content="Idea Validation - Innova-Z">
+    <meta property="og:description" content="Transform your idea into a validated, market-ready solution with Innova-Z’s research-driven validation process.">
+    <meta property="og:image" content="https://www.innova-z.com/og-banner.webp">
+    <meta property="og:url" content="https://www.innova-z.com/idea-validation.html">
+    <meta property="og:type" content="website">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Idea Validation - Innova-Z">
+    <meta name="twitter:description" content="Validate your business idea with market research, interviews and data-driven insights by Innova-Z.">
+    <meta name="twitter:image" content="https://www.innova-z.com/og-banner.webp">
 
-        html {
-            scroll-behavior: smooth;
-        }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--light-bg);
-            color: var(--dark-text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+:root {
+    --primary-color: #FF7F7F;
+    --secondary-color: #FFFFFF;
+    --light-bg: #F8F8F8;
+    --dark-text: #212121;
+    --card-bg: #FFFFFF;
+    --accent-glow: 0 0 10px rgba(255, 127, 127, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
+    --hover-glow: 0 0 15px rgba(255, 127, 127, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+}
 
-        .background-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #FFF0F0, #FFFFFF); /* Very subtle light red to white gradient */
-            z-index: -1;
-            opacity: 0.8;
-            animation: background-pulse 20s infinite alternate;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        @keyframes background-pulse {
-            0% { transform: scale(1.0); }
-            100% { transform: scale(1.1); }
-        }
+html { scroll-behavior: smooth; }
 
-        .back-link {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            color: var(--dark-text);
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 8px 15px;
-            border-radius: 50px;
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 127, 127, 0.3);
-            transition: transform 0.3s ease;
-            z-index: 100;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
-        .back-link:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--accent-glow);
-        }
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #FFF0F0, #FFFFFF);
+    z-index: -1;
+    opacity: 0.8;
+    animation: background-pulse 20s infinite alternate;
+}
 
-        .hero {
-            height: 60vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            background: radial-gradient(circle, rgba(255, 127, 127, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
-        }
+@keyframes background-pulse {
+    0% { transform: scale(1.0); }
+    100% { transform: scale(1.1); }
+}
 
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            background: linear-gradient(to right, #FF4136, #FF7F7F); /* Darker to lighter red gradient */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: text-pulse 3s infinite;
-        }
+.back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: var(--dark-text);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 127, 127, 0.3);
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
 
-        @keyframes text-pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
+.back-link:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--accent-glow);
+}
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: var(--dark-text);
-        }
+.hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle, rgba(255, 127, 127, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+}
 
-        section {
-            padding: 80px 5%;
-            max-width: 1200px;
-            margin: auto;
-        }
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #FF4136, #FF7F7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-pulse 3s infinite;
+}
 
-        h2 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            text-align: center;
-            position: relative;
-            padding-bottom: 10px;
-            color: var(--dark-text);
-        }
+@keyframes text-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
 
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(to right, #FF4136, #FF7F7F);
-            border-radius: 2px;
-        }
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--dark-text);
+}
 
-        .feature-grid, .timeline {
-            display: grid;
-            gap: 30px;
-            margin-top: 40px;
-        }
+main section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
 
-        .feature-grid {
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    color: var(--dark-text);
+}
 
-        .timeline {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            position: relative;
-        }
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #FF4136, #FF7F7F);
+    border-radius: 2px;
+}
 
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 5%;
-            right: 5%;
-            height: 2px;
-            background: rgba(0, 0, 0, 0.1); /* Subtle dark line */
-            z-index: -1;
-        }
+.feature-grid, .timeline {
+    display: grid;
+    gap: 30px;
+    margin-top: 40px;
+}
 
-        .feature-card, .step {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 15px;
-            text-align: center;
-            border: 1px solid rgba(255, 127, 127, 0.2);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Very light shadow */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.feature-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
-        .feature-card:hover, .step:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--hover-glow);
-        }
+.timeline {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    position: relative;
+}
 
-        .feature-card .icon, .step .icon {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-            background: -webkit-linear-gradient(right, #FF4136, #FF7F7F);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: transform 0.5s ease;
-        }
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
 
-        .feature-card:hover .icon, .step:hover .icon {
-            transform: rotateY(360deg);
-        }
+/* 🔥 Mobile Timeline Fix */
+@media(max-width: 600px) {
+    .timeline::before {
+        display: none;
+    }
+}
 
-        .feature-card h3, .step h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--dark-text);
-        }
+.feature-card, .step {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 127, 127, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .cta {
-            text-align: center;
-        }
+.feature-card:hover, .step:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--hover-glow);
+}
 
-        .cta h2 {
-            font-size: 2rem;
-            background: linear-gradient(to right, #FF4136, #FF7F7F);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+.feature-card .icon, .step .icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient(right, #FF4136, #FF7F7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.5s ease;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            margin-top: 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            background: linear-gradient(to right, #FF4136, #FF7F7F);
-            color: #FFFFFF;
-            font-weight: 600;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.feature-card:hover .icon, .step:hover .icon {
+    transform: rotateY(360deg);
+}
 
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--hover-glow);
-        }
+.feature-card h3, .step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--dark-text);
+}
 
-        .reveal {
-            position: relative;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s ease, transform 1s ease;
-        }
+.cta {
+    text-align: center;
+}
 
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
+.cta h2 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #FF4136, #FF7F7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    background: linear-gradient(to right, #FF4136, #FF7F7F);
+    color: #FFFFFF;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-            h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--hover-glow);
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Innova-Z",
+  "url": "https://www.innova-z.com",
+  "logo": "https://www.innova-z.com/logo.jpg",
+  "description": "Digital agency offering branding, marketing, websites, tech, and influencer collaborations.",
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Idea Validation",
+  "description": "Startup concept validation using market research, competitor audit, and user interviews.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Innova-Z",
+    "url": "https://www.innova-z.com",
+    "logo": "https://www.innova-z.com/logo.jpg"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": "Startup Idea Validation",
+  "url": "https://www.innova-z.com/service1.html"
+}
+</script>
 </head>
+
 <body>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    } else {
-                        entry.target.classList.remove('active');
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            document.querySelectorAll('.reveal').forEach(element => {
-                observer.observe(element);
-            });
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
+            }
         });
-    </script>
-    <a href="index.html" class="back-link">&larr; Back to Home</a>
-    <header class="hero">
-        <h1>Idea Validation</h1>
-        <p>Transforming visionary ideas into digital realities.</p>
-    </header>
+    }, { threshold: 0.1 });
 
-    <div class="background-animation"></div>
+    document.querySelectorAll('.reveal').forEach(element => {
+        observer.observe(element);
+    });
+});
+</script>
 
-    <section class="about reveal">
-        <h2>About Idea Validation</h2>
-        <p>Before an idea can become a successful product, it must be rigorously validated. Idea validation is the process of testing and confirming a new concept to ensure there is a genuine market need. At **Innova-Z**, we go beyond simple market research to deliver a comprehensive validation process that reduces risk and maximizes the potential for success. We help you answer critical questions like: Is there a real problem to solve? Who is the target audience? What are the competitors doing? And, what's the most effective way to build a sustainable business model?</p>
-    </section>
+<a href="index.html#services" class="back-link">&larr; Back to Home</a>
 
-    <section class="features reveal">
-        <h2>Key Pillars of Our Process</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <i class="fa-solid fa-lightbulb icon"></i>
-                <h3>Market Research</h3>
-                <p>We analyze market trends, identify your target audience, and assess the competitive landscape to ensure your idea has a unique value proposition.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fa-solid fa-users icon"></i>
-                <h3>User Interviews</h3>
-                <p>Through in-depth interviews and surveys, we gather qualitative data directly from potential users to understand their pain points and needs.</p>
-            </div>
-            <div class="feature-card">
-                <i class="fa-solid fa-chart-line icon"></i>
-                <h3>Data Analysis</h3>
-                <p>We use robust data analytics to quantify demand and validate hypotheses, providing you with actionable, data-driven insights.</p>
-            </div>
+<header class="hero">
+    <h1>Idea Validation</h1>
+    <p>Transforming visionary ideas into digital realities.</p>
+</header>
+
+<div class="background-animation"></div>
+
+<!-- ⭐ MAIN TAG ADDED -->
+<main>
+
+<section class="about reveal">
+    <h2>About Idea Validation</h2>
+    <p>
+        Before an idea can become a successful product, it must be rigorously validated.
+        Idea validation is the process of testing and confirming a new concept to ensure 
+        there is a genuine market need. At <strong>Innova-Z</strong>, we go beyond simple 
+        market research to deliver a comprehensive validation process that reduces risk 
+        and maximizes the potential for success. We help you answer critical questions like:
+        Is there a real problem to solve? Who is the target audience? What are the competitors doing? 
+        And, what's the most effective way to build a sustainable business model?
+    </p>
+</section>
+
+<section class="features reveal">
+    <h2>Key Pillars of Our Process</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <i class="fa-solid fa-lightbulb icon"></i>
+            <h3>Market Research</h3>
+            <p>We analyze market trends, identify your target audience, and assess the competitive landscape to ensure your idea has a unique value proposition.</p>
         </div>
-    </section>
-
-    <section class="process reveal">
-        <h2>Our Process</h2>
-        <div class="timeline">
-            <div class="step">
-                <i class="fa-solid fa-magnifying-glass icon"></i>
-                <h3>Step 1: Discovery</h3>
-                <p>We work with you to deeply understand your idea and its core assumptions.</p>
-            </div>
-            <div class="step">
-                <i class="fa-solid fa-seedling icon"></i>
-                <h3>Step 2: Validation</h3>
-                <p>We conduct user research, create lean canvases, and perform competitive analysis.</p>
-            </div>
-            <div class="step">
-                <i class="fa-solid fa-rocket icon"></i>
-                <h3>Step 3: Strategy</h3>
-                <p>We deliver a comprehensive report with a clear go-to-market strategy.</p>
-            </div>
+        <div class="feature-card">
+            <i class="fa-solid fa-users icon"></i>
+            <h3>User Interviews</h3>
+            <p>Through in-depth interviews and surveys, we gather qualitative data directly from potential users to understand their pain points and needs.</p>
         </div>
-    </section>
+        <div class="feature-card">
+            <i class="fa-solid fa-chart-line icon"></i>
+            <h3>Data Analysis</h3>
+            <p>We use robust data analytics to quantify demand and validate hypotheses, providing you with actionable, data-driven insights.</p>
+        </div>
+    </div>
+</section>
 
-    <section class="cta reveal">
-        <h2>Ready to Innovate?</h2>
-        <a href="index.html#contact" class="btn">Get Started</a>
-    </section>
+<section class="process reveal">
+    <h2>Our Process</h2>
+    <div class="timeline">
+        <div class="step">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <h3>Step 1: Discovery</h3>
+            <p>We work with you to deeply understand your idea and its core assumptions.</p>
+        </div>
+        <div class="step">
+            <i class="fa-solid fa-seedling icon"></i>
+            <h3>Step 2: Validation</h3>
+            <p>We conduct user research, create lean canvases, and perform competitive analysis.</p>
+        </div>
+        <div class="step">
+            <i class="fa-solid fa-rocket icon"></i>
+            <h3>Step 3: Strategy</h3>
+            <p>We deliver a comprehensive report with a clear go-to-market strategy.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta reveal">
+    <h2>Ready to Innovate?</h2>
+    <a href="index.html#contact" class="btn">Get Started</a>
+</section>
+
+</main>
+
 </body>
 </html>
