@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand Kit Creation - Innova-Z</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Validate your startup idea with Innova-Z through market research, user interviews, competitive analysis, and data-driven strategies.">
+    <meta name="keywords" content="idea validation, startup validation, market research, competitive analysis, user interviews, Innova-Z">
+    <link rel="canonical" href="https://www.innova-z.com/idea-validation.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Idea Validation - Innova-Z">
+    <meta property="og:description" content="Transform your idea into a validated, market-ready solution with Innova-Z’s research-driven validation process.">
+    <meta property="og:image" content="https://www.innova-z.com/og-banner.webp">
+    <meta property="og:url" content="https://www.innova-z.com/idea-validation.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Idea Validation - Innova-Z">
+    <meta name="twitter:description" content="Validate your business idea with market research, interviews and data-driven insights by Innova-Z.">
+    <meta name="twitter:image" content="https://www.innova-z.com/og-banner.webp">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
         :root {
-            --primary-color: #FF7F7F; /* Light Red */
-            --secondary-color: #FFFFFF; /* White */
-            --light-bg: #F8F8F8; /* Very Light Gray */
-            --dark-text: #212121; /* Dark Gray for text */
-            --card-bg: #FFFFFF; /* White card background */
+            --primary-color: #FF7F7F;
+            --secondary-color: #FFFFFF;
+            --light-bg: #F8F8F8;
+            --dark-text: #212121;
+            --card-bg: #FFFFFF;
             --accent-glow: 0 0 10px rgba(255, 127, 127, 0.5), 0 0 20px rgba(255, 255, 255, 0.5);
             --hover-glow: 0 0 15px rgba(255, 127, 127, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
         }
@@ -42,7 +59,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, #FFF0F0, #FFFFFF); /* Very subtle light red to white gradient */
+            background: linear-gradient(45deg, #FFF0F0, #FFFFFF);
             z-index: -1;
             opacity: 0.8;
             animation: background-pulse 20s infinite alternate;
@@ -88,7 +105,7 @@
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 700;
-            background: linear-gradient(to right, #FF4136, #FF7F7F); /* Darker to lighter red gradient */
+            background: linear-gradient(to right, #FF4136, #FF7F7F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: text-pulse 3s infinite;
@@ -156,8 +173,15 @@
             left: 5%;
             right: 5%;
             height: 2px;
-            background: rgba(0, 0, 0, 0.1); /* Subtle dark line */
+            background: rgba(0, 0, 0, 0.1);
             z-index: -1;
+        }
+
+        /* ✔ MOBILE FIX: Remove timeline line */
+        @media (max-width: 600px) {
+            .timeline::before {
+                display: none;
+            }
         }
 
         .feature-card, .step {
@@ -166,7 +190,7 @@
             border-radius: 15px;
             text-align: center;
             border: 1px solid rgba(255, 127, 127, 0.2);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Very light shadow */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -187,13 +211,6 @@
 
         .feature-card:hover .icon, .step:hover .icon {
             transform: rotateY(360deg);
-        }
-
-        .feature-card h3, .step h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--dark-text);
         }
 
         .cta {
@@ -245,12 +262,46 @@
             }
 
             h2 {
-                font-size: 2rem;
+                font-size: 2rem);
             }
         }
     </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Innova-Z",
+  "url": "https://www.innova-z.com",
+  "logo": "https://www.innova-z.com/logo.jpg",
+  "description": "Digital agency offering branding, marketing, websites, tech, and influencer collaborations.",
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Brand Kit Creation",
+  "description": "Professional brand identity asset package creation including colors, fonts, and brand usage guidelines.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Innova-Z",
+    "url": "https://www.innova-z.com",
+    "logo": "https://www.innova-z.com/logo.jpg"
+  },
+  "areaServed": "Worldwide",
+  "serviceType": "Brand Identity Toolkit Development",
+  "url": "https://www.innova-z.com/service3.html"
+}
+</script>
+
 </head>
+
 <body>
+
+<main> <!-- ✔ MAIN TAG ADDED -->
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const observer = new IntersectionObserver((entries) => {
@@ -261,16 +312,16 @@
                         entry.target.classList.remove('active');
                     }
                 });
-            }, {
-                threshold: 0.1
-            });
+            }, { threshold: 0.1 });
 
             document.querySelectorAll('.reveal').forEach(element => {
                 observer.observe(element);
             });
         });
     </script>
-    <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+    <a href="index.html#services" class="back-link">&larr; Back to Home</a>
+
     <header class="hero">
         <h1>Brand Kit Creation</h1>
         <p>Building a cohesive and memorable identity.</p>
@@ -280,7 +331,12 @@
 
     <section class="about reveal">
         <h2>About Brand Kit Creation</h2>
-        <p>A **brand kit** is more than just a logo; it's a comprehensive set of guidelines and assets that define your brand's visual identity. It ensures consistency across all platforms, from your website to social media, and from marketing materials to internal documents. A strong brand kit builds trust and recognition, making your company memorable to your audience. At Innova-Z, we meticulously craft a kit that captures your brand's essence and provides the tools you need to maintain a professional and cohesive presence.</p>
+        <p>
+            A <strong>brand kit</strong> is more than just a logo; it's a comprehensive set of guidelines and assets that define your brand's visual identity. 
+            It ensures consistency across all platforms, from your website to social media, and from marketing materials to internal documents. 
+            A strong brand kit builds trust and recognition, making your company memorable to your audience. 
+            At <strong>Innova-Z</strong>, we meticulously craft a kit that captures your brand's essence and provides the tools you need to maintain a professional and cohesive presence.
+        </p>
     </section>
 
     <section class="features reveal">
@@ -329,5 +385,8 @@
         <h2>Ready to Define Your Brand?</h2>
         <a href="index.html#contact" class="btn">Get Started</a>
     </section>
+
+</main> <!-- END MAIN TAG -->
+
 </body>
 </html>
