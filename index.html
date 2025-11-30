@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innova-Z</title>
+     <!-- Meta Description -->
+    <meta name="description" content="Innova-Z empowers businesses with end-to-end digital solutions including branding, marketing, website development, tech support, and digital transformation.">
+    <meta name="keywords" content="digital agency, branding, website development, marketing, Innova-Z, tech support">
+    <!-- Open Graph Tags -->
+<meta property="og:title" content="Innova-Z — From Start to Z, Digitally">
+<meta property="og:description" content="Digital innovation, branding, websites, marketing, and business transformation.">
+<meta property="og:image" content="logo.jpg">
+<meta property="og:url" content="https://www.innova-z.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+   <link rel="canonical" href="https://www.innova-z.com/">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -176,7 +188,7 @@
 .service-card h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
-  color: #black; /* Service title in black */
+  color: #000; /* Service title in black */
 }
 
 .service-card p {
@@ -242,113 +254,124 @@
   color: #fff;
   box-shadow: 0 0 15px rgba(204, 0, 0, 0.6);
 }
-
-
-
     </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Innova-Z",
+  "url": "https://www.innova-z.com/",
+  "logo": "https://www.innova-z.com/logo.jpg",
+  "sameAs": [
+    "https://www.instagram.com/innovaz_/",
+    "https://www.linkedin.com/company/innova-z"
+  ],
+  "description": "Innova-Z empowers businesses with end-to-end digital solutions including branding, marketing, website development, tech support, and digital transformation.",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+91-9330395305",
+      "contactType": "customer service",
+      "areaServed": "Worldwide",
+      "availableLanguage": ["English", "Hindi"]
+    }
+  ],
+  "areaServed": "Worldwide"
+}
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".reveal-on-scroll");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => observer.observe(el));
+});
+</script>
 </head>
 <body class="bg-gray-50 text-gray-700">
 
-    <main>
-        <!-- Home Section Wrapper - Change background color here -->
-        <div class="bg-gray-50">
-            <section id="home" class="container mx-auto px-4 py-20 text-center relative overflow-hidden">
-                <div class="absolute inset-0 futuristic-bg-light"></div>
-                <div class="absolute inset-0 futuristic-bg-overlay"></div>
-                <div class="relative z-10">
-                    <div class="flex items-center justify-center mb-8">
-                        <!-- Logo Image Placeholder (Larger and round for Home Page) -->
-                        <img src="logo.jpg" alt="Innova-Z Logo" class="h-20 w-20 mr-2 rounded-full">
-                        <span class="text-5xl font-extrabold text-red-600">Innova-Z</span>
-                    </div>
-                    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight fade-in-on-load">
-                        From Start to Z, <span class="text-red-600">Digitally.</span>
-                    </h1>
-                    <p class="mt-4 md:mt-6 text-lg max-w-2xl mx-auto text-gray-600 fade-in-on-load fade-in-1">
-                        Empowering businesses with cutting-edge digital innovation. We transform your visionary ideas into powerful digital realities through comprehensive end-to-end solutions.
-                    </p>
-                    <div class="mt-8 flex justify-center space-x-4 fade-in-on-load fade-in-2">
-                        <a href="#contact" class="px-8 py-3 rounded-full text-white font-semibold shadow-md animated-gradient light-glow-btn btn-hover">
-                            Get Started &rarr;
-                        </a>
-                        <a href="#services" class="px-8 py-3 rounded-full bg-white text-gray-800 font-semibold border border-gray-300 shadow-md hover:bg-gray-100 transition-colors duration-300 btn-hover">
-                            Explore Services
-                        </a>
-                    </div>
-                </div>
+  <main>
+    <!-- Home Section Wrapper -->
+    <div class="bg-gray-50">
+      <section id="home" class="container mx-auto px-4 py-20 text-center relative overflow-hidden" aria-label="Home">
+        <div class="absolute inset-0 futuristic-bg-light" aria-hidden="true"></div>
+        <div class="absolute inset-0 futuristic-bg-overlay" aria-hidden="true"></div>
+        <div class="relative z-10">
+          <div class="flex items-center justify-center mb-8">
+            <!-- Logo Image (eager load for LCP) -->
+            <img src="logo.jpg" alt="Innova-Z Official Logo — Digital Innovation, Branding & Web Development Agency" class="h-20 w-20 mr-2 rounded-full" fetchpriority="high" loading="eager">
+            <span class="text-5xl font-extrabold text-red-600">Innova-Z</span>
+          </div>
 
-                <!-- Stats Section -->
-                <div class="mt-20 reveal-on-scroll">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                        <div class="p-6">
-                            <h2 class="text-4xl font-extrabold text-red-600">Global</h2>
-                            <p class="mt-2 text-sm text-gray-500 uppercase font-medium">Presence</p>
-                        </div>
-                        <div class="p-6">
-                            <h2 class="text-4xl font-extrabold text-red-600">24/7</h2>
-                            <p class="mt-2 text-sm text-gray-500 uppercase font-medium">Technical Support</p>
-                        </div>
-                        <div class="p-6">
-                            <h2 class="text-4xl font-extrabold text-red-600">End-to-End</h2>
-                            <p class="mt-2 text-sm text-gray-500 uppercase font-medium">Digital Solutions</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <!-- Keep your tagline exactly as requested -->
+          <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight fade-in-on-load">From Start to Z, <span class="text-red-600">Digitally.</span></h1>
+
+          <p class="mt-4 md:mt-6 text-lg max-w-2xl mx-auto text-gray-600 fade-in-on-load fade-in-1">Empowering businesses with cutting-edge digital innovation. We transform your visionary ideas into powerful digital realities through comprehensive end-to-end solutions.</p>
+
+          <div class="mt-8 flex justify-center space-x-4 fade-in-on-load fade-in-2">
+            <a href="#contact" class="px-8 py-3 rounded-full text-white font-semibold shadow-md animated-gradient light-glow-btn btn-hover" aria-label="Get started with Innova-Z">Get Started &rarr;</a>
+            <a href="#services" class="px-8 py-3 rounded-full bg-white text-gray-800 font-semibold border border-gray-300 shadow-md hover:bg-gray-100 transition-colors duration-300 btn-hover" aria-label="Explore Innova-Z services">Explore Services</a>
+          </div>
         </div>
 
-        <!-- About Section Wrapper -->
-        <div class="bg-gray-50">
-            <section id="about" class="container mx-auto px-4 py-20 relative overflow-hidden reveal-on-scroll">
-                 <div class="absolute inset-0 futuristic-bg-light"></div>
-                 <div class="absolute inset-0 futuristic-bg-overlay"></div>
-                <div class="flex flex-col lg:flex-row items-center lg:space-x-12 relative z-10">
-                    <div class="lg:w-1/2">
-                        <h2 class="text-4xl font-bold"><span class="text-gray-900">About</span> <span class="text-red-600">Innova-Z</span></h2>
-                        <p class="mt-4 text-gray-600 leading-relaxed fade-in-on-load fade-in-1">
-                            Innova-Z is a pioneering force in the digital innovation landscape, dedicated to empowering businesses by transforming their visionary concepts into powerful digital realities. Our journey began with a simple yet profound mission: to bridge the gap between abstract ideas and concrete, high-impact digital solutions.
-                        </p>
-                        <p class="mt-4 text-gray-600 leading-relaxed fade-in-on-load fade-in-2">
-                            Our comprehensive, end-to-end approach ensures that every aspect of your project is meticulously handled. We guide you from initial concept validation and strategic planning to rapid, efficient execution and scalable solutions that are built to last. Our team of experts works tirelessly to ensure your digital infrastructure not only meets today's demands but is also future-ready, giving you a sustainable competitive advantage.
-                        </p>
-                        <div class="mt-8 space-y-4">
-    <!-- Strategic Vision -->
-    <div class="flex items-center space-x-3 hover:scale-105 transition-transform duration-300 fade-in-on-load fade-in-3">
-        <!-- Lightbulb Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M9 21h6v-1H9v1zm3-19C7.48 2 4 5.58 4 10c0 3.07 1.64 5.64 4 7.1V20h8v-2.9c2.36-1.46 4-4.03 4-7.1 0-4.42-3.58-8-8-8z"/>
-        </svg>
-        <span class="text-gray-800 font-medium">Strategic Vision</span>
+        <!-- About Section -->
+        <div class="mt-20 reveal-on-scroll" aria-hidden="false">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6"><h2 class="text-4xl font-extrabold text-red-600">Global</h2><p class="mt-2 text-sm text-gray-500 uppercase font-medium">Presence</p></div>
+            <div class="p-6"><h2 class="text-4xl font-extrabold text-red-600">24/7</h2><p class="mt-2 text-sm text-gray-500 uppercase font-medium">Technical Support</p></div>
+            <div class="p-6"><h2 class="text-4xl font-extrabold text-red-600">End-to-End</h2><p class="mt-2 text-sm text-gray-500 uppercase font-medium">Digital Solutions</p></div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <!-- Rapid Execution -->
-    <div class="flex items-center space-x-3 hover:scale-105 transition-transform duration-300 fade-in-on-load fade-in-4">
-        <!-- Rocket Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2c-2.5 0-4.71.92-6.36 2.44L2 8.08V14h5v8h10v-8h5V8.08l-3.64-3.64A9.982 9.982 0 0012 2z"/>
-        </svg>
-        <span class="text-gray-800 font-medium">Rapid Execution</span>
-    </div>
+    <div class="bg-gray-50">
+    <section id="about" class="container mx-auto px-4 py-20 relative overflow-hidden reveal-on-scroll" aria-label="About Innova-Z">
+        <div class="absolute inset-0 futuristic-bg-light" aria-hidden="true"></div>
+        <div class="absolute inset-0 futuristic-bg-overlay" aria-hidden="true"></div>
+        <div class="flex flex-col lg:flex-row items-center lg:space-x-12 relative z-10">
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold"><span class="text-gray-900">About</span> <span class="text-red-600">Innova-Z</span></h2>
+                <p class="mt-4 text-gray-600 leading-relaxed fade-in-on-load fade-in-1">Innova-Z is a pioneering force in the digital innovation landscape, dedicated to empowering businesses by transforming their visionary concepts into powerful digital realities. Our journey began with a simple yet profound mission: to bridge the gap between abstract ideas and concrete, high-impact digital solutions.</p>
+                <p class="mt-4 text-gray-600 leading-relaxed fade-in-on-load fade-in-2">Our comprehensive, end-to-end approach ensures that every aspect of your project is meticulously handled. We guide you from initial concept validation and strategic planning to rapid, efficient execution and scalable solutions that are built to last. Our team of experts works tirelessly to ensure your digital infrastructure not only meets today's demands but is also future-ready, giving you a sustainable competitive advantage.</p>
 
-    <!-- Scalable Solutions -->
-    <div class="flex items-center space-x-3 hover:scale-105 transition-transform duration-300 fade-in-on-load fade-in-5">
-        <!-- Cloud Icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19.35 10.04A7.49 7.49 0 0012 4a7.49 7.49 0 00-7.35 6.04A6.002 6.002 0 006 22h12a6 6 0 001.35-11.96z"/>
-        </svg>
-        <span class="text-gray-800 font-medium">Scalable Solutions</span>
-    </div>
+                <div class="mt-8 space-y-4">
+                    <div class="flex items-center space-x-3 hover:scale-105 transition-transform duration-300 fade-in-on-load fade-in-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C7.03 2 3 6.03 3 11c0 3.07 1.64 5.64 4 7.1V22h10v-3.9c2.36-1.46 4-4.03 4-7.1 0-4.97-4.03-9-9-9z"/>
+                        </svg>
+                        <span class="text-gray-800 font-medium">Strategic Vision</span>
+                    </div>
+                    <div class="flex items-center space-x-3 hover:scale-105 transition-transform duration-300 fade-in-on-load fade-in-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V8h2v4zm4 4h-2v-2h2v2zm0-4h-2V8h2v4z"/>
+                        </svg>
+                        <span class="text-gray-800 font-medium">Rapid Execution</span>
+                    </div>
+                    <div class="flex items-center space-x-3 hover:scale-105 transition-transform duration-300 fade-in-on-load fade-in-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4c-3.72 0-6.75 3.12-6.9 7.02A5.996 5.996 0 006 22h12c3.31 0 6-2.69 6-6 0-2.64-1.74-4.87-4.65-5.96z"/>
+                        </svg>
+                        <span class="text-gray-800 font-medium">Scalable Solutions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center relative">
+                <img src="about.png" alt="About Innova-Z — digital services, branding, and development" class="rounded-lg shadow-md transform -rotate-6 transition-transform duration-500 hover:rotate-0" loading="lazy">
+            </div>
+        </div>
+    </section>
 </div>
 
-                    </div>
-                    <!-- Right side with the image -->
-                    <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center relative">
-                        <!-- Replace "https://placehold.co/500x500" with your image URL -->
-                        <img src="about.png" alt="Abstract digital graphic" class="rounded-lg shadow-md transform -rotate-6 transition-transform duration-500 hover:rotate-0">
-                    </div>
-                </div>
-            </section>
-        </div>
+
     <!-- Services Section -->
 <section class="services" id="services">
   <h2 class="section-title"><span class="black">Our</span> <span class="red">Services</span></h2>
@@ -424,253 +447,198 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
+   <!-- Blog Section -->
+<section id="blog" class="bg-gray-50 py-20" aria-label="Innova-Z Blog">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold mb-10">
+      <span class="text-gray-900">Latest</span> <span class="text-red-600">Insights</span>
+    </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
+      Explore expert insights, digital innovation trends, and business transformation ideas from Innova-Z.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+
+      <!-- Blog Post 1 -->
+      <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6">
+        <img src="blog1.png" alt="The Future of Digital Branding 2025" class="rounded-lg mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">The Future of Digital Branding in 2025</h3>
+        <p class="text-gray-600 mb-4">Discover how AI-driven personalization, storytelling, and immersive media are redefining brand identity and customer loyalty this decade.</p>
+        <a href="blog1.html" class="text-red-600 font-medium hover:underline">Read More →</a>
+      </article>
+
+      <!-- Blog Post 2 -->
+      <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6">
+        <img src="blog2.png" alt="Why Every Startup Needs a Brand Kit" class="rounded-lg mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">Why Every Startup Needs a Professional Brand Kit</h3>
+        <p class="text-gray-600 mb-4">Your brand’s visual identity builds credibility. Learn how a well-designed brand kit helps your startup stand out and attract loyal customers.</p>
+        <a href="blog2.html" class="text-red-600 font-medium hover:underline">Read More →</a>
+      </article>
+
+      <!-- Blog Post 3 -->
+      <article class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6">
+        <img src="blog3.png" alt="End-to-End Digital Transformation Guide" class="rounded-lg mb-4 w-full h-48 object-cover">
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">End-to-End Digital Transformation: A Practical Guide</h3>
+        <p class="text-gray-600 mb-4">From idea validation to execution — explore how businesses can adopt digital transformation in structured, scalable ways.</p>
+        <a href="blog3.html" class="text-red-600 font-medium hover:underline">Read More →</a>
+      </article>
+    </div>
+  </div>
+</section>
 
 
-<!-- Contact Section Wrapper -->
+    <!-- Contact Section -->
 <div class="bg-white relative">
-  <section id="contact" class="container mx-auto px-4 py-20 relative overflow-hidden">
-    
-    <!-- Futuristic Background -->
-    <div class="absolute inset-0 futuristic-bg-light"></div>
-    <div class="absolute inset-0 futuristic-bg-overlay"></div>
+    <section id="contact" class="container mx-auto px-4 py-20 relative overflow-hidden" aria-label="Contact Innova-Z">
+        <div class="absolute inset-0 futuristic-bg-light" aria-hidden="true"></div>
+        <div class="absolute inset-0 futuristic-bg-overlay" aria-hidden="true"></div>
 
-    <!-- Heading -->
-    <div class="text-center mb-12 relative z-10">
-      <h2 class="text-4xl font-bold">
-        <span class="text-gray-900">Let's Build</span>
-        <span class="text-red-600">the Future Together</span>
-      </h2>
-      <p class="mt-2 text-lg text-gray-600">
-        Ready to transform your ideas into digital reality?
-      </p>
-    </div>
-
-    <!-- Content -->
-    <div class="flex flex-col lg:flex-row lg:space-x-12 relative z-10">
-      
-      <!-- Left Info -->
-      <div class="lg:w-1/2 space-y-8">
-        <!-- Innovation Message -->
-        <div class="flex items-start space-x-4 fade-in-on-load fade-in-1">
-          <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v6h-2v-6zm0 8h2v2h-2v-2z"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-gray-900">Ready to Innovate?</h3>
-            <p class="mt-1 text-gray-600">
-              Reach out to Innova-Z today — where your ideas meet digital innovation. Let's create something extraordinary together.
-            </p>
-          </div>
+        <div class="text-center mb-12 relative z-10">
+            <h2 class="text-4xl font-bold"><span class="text-gray-900">Let's Build</span> <span class="text-red-600">the Future Together</span></h2>
+            <p class="mt-2 text-lg text-gray-600">Ready to transform your ideas into digital reality?</p>
         </div>
 
-        <!-- Phone -->
-        <div class="flex items-start space-x-4 fade-in-on-load fade-in-2">
-          <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M17.5 4.5c0-.83-.67-1.5-1.5-1.5H8c-.83 0-1.5.67-1.5 1.5v15c0 .83.67 1.5 1.5 1.5h8c.83 0 1.5-.67 1.5-1.5v-15zM16 19.5h-7V5.5h7v14z"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-gray-900">Phone</h3>
-            <p class="mt-1 text-gray-600">+91 9330395305</p>
-          </div>
+        <div class="flex flex-col lg:flex-row lg:space-x-12 relative z-10">
+
+            <div class="lg:w-1/2 space-y-8">
+                <div class="flex items-start space-x-4 fade-in-on-load fade-in-1">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Ready to Innovate?</h3>
+                        <p class="mt-1 text-gray-600">Reach out to Innova-Z today — where your ideas meet digital innovation. Let's create something extraordinary together.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 fade-in-on-load fade-in-2">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.2c.28-.27.36-.66.24-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Phone</h3>
+                        <p class="mt-1 text-gray-600"><a href="tel:+919330395305" class="hover:text-red-500 transition-colors">+91 9330395305</a></p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 fade-in-on-load fade-in-3">
+                    <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900">Email</h3>
+                        <p class="mt-1 text-gray-600"><a href="mailto:info@innova-z.com" class="hover:text-red-500 transition-colors">info@innova-z.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-10 mt-10 lg:mt-0">
+                <form id="contactForm" action="https://formspree.io/f/xblavglg" method="POST" class="space-y-6" aria-label="Contact form">
+                    <input type="hidden" name="_subject" value="New Message from Innova-Z Contact Form">
+                    <div><label for="fullname" class="block text-sm font-medium text-gray-700">Full Name</label><input type="text" id="fullname" name="fullname" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 transition placeholder-gray-400" placeholder="Enter your full name"></div>
+                    <div><label for="email" class="block text-sm font-medium text-gray-700">Email Address</label><input type="email" id="email" name="email" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 transition placeholder-gray-400" placeholder="Enter your email address"></div>
+                    <div><label for="message" class="block text-sm font-medium text-gray-700">Message</label><textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 transition placeholder-gray-400" placeholder="Tell us about your project and how we can help..."></textarea></div>
+                    <div><button type="submit" class="w-full px-6 py-3 rounded-lg text-white font-semibold shadow-lg bg-gradient-to-r from-red-500 to-red-700 hover:opacity-90 transition">Send Message</button></div>
+                </form>
+                <p id="form-status" class="mt-4 text-sm text-center text-gray-600 hidden" role="status">Message sent successfully ✅</p>
+            </div>
+
         </div>
-
-        <!-- Email -->
-        <div class="flex items-start space-x-4 fade-in-on-load fade-in-3">
-          <div class="flex-shrink-0 w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1.17 4.09l-7.77 4.77-7.77-4.77c-.31-.19-.48-.5-.48-.84 0-.61.54-.92 1.05-.62l7.2 4.4 7.2-4.4c.51-.3.81.01.81.61s-.18.65-.49.84z"/>
-            </svg>
-          </div>
-          <div>
-            <h3 class="text-lg font-bold text-gray-900">Email</h3>
-            <p class="mt-1 text-gray-600">info@innova-z.com</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="lg:w-1/2 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-10 mt-10 lg:mt-0">
-        <form id="contactForm" action="https://formspree.io/f/xblavglg" method="POST" class="space-y-6">
-          <input type="hidden" name="_subject" value="New Message from Innova-Z Contact Form">
-
-          <!-- Full Name -->
-          <div>
-            <label for="fullname" class="block text-sm font-medium text-gray-700">Full Name</label>
-            <input type="text" id="fullname" name="fullname" required
-              class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 transition placeholder-gray-400"
-              placeholder="Enter your full name">
-          </div>
-
-          <!-- Email -->
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-            <input type="email" id="email" name="email" required
-              class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 transition placeholder-gray-400"
-              placeholder="Enter your email address">
-          </div>
-
-          <!-- Message -->
-          <div>
-            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-            <textarea id="message" name="message" rows="4" required
-              class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500 transition placeholder-gray-400"
-              placeholder="Tell us about your project and how we can help..."></textarea>
-          </div>
-
-          <!-- Button -->
-          <div>
-            <button type="submit"
-              class="w-full px-6 py-3 rounded-lg text-white font-semibold shadow-lg bg-gradient-to-r from-red-500 to-red-700 hover:opacity-90 transition">
-              Send Message
-            </button>
-          </div>
-        </form>
-
-        <!-- Success/Failure Placeholder -->
-        <p id="form-status" class="mt-4 text-sm text-center text-gray-600 hidden">Message sent successfully ✅</p>
-      </div>
-    </div>
-  </section>
-</div>
     </section>
-        </div>
-    </main>
 </div>
-<script>
-const form = document.getElementById("contactForm");
-const status = document.getElementById("form-status");
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const data = new FormData(form);
-  try {
-    const res = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
+  </main>
+
+  <script>
+    // Contact form submission handler (keeps previous behaviour)
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("form-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, { method: form.method, body: data, headers: { 'Accept': 'application/json' } });
+        if (res.ok) { status.innerText = "✅ Message sent successfully!"; status.classList.remove('hidden'); form.reset(); } else { status.innerText = "❌ Oops! Something went wrong."; status.classList.remove('hidden'); }
+      } catch (err) { status.innerText = "⚠️ Network error, please try again."; status.classList.remove('hidden'); }
     });
-    if (res.ok) {
-      status.innerText = "✅ Message sent successfully!";
-      form.reset();
-    } else {
-      status.innerText = "❌ Oops! Something went wrong.";
-    }
-  } catch (err) {
-    status.innerText = "⚠️ Network error, please try again.";
-  }
-});
-</script>
-    
+
+    // Intersection Observer for reveal
+    const sections = document.querySelectorAll('.reveal-on-scroll');
+    const observerOptions = { root: null, threshold: 0.1, rootMargin: '0px' };
+    const observer = new IntersectionObserver((entries, observer) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } }); }, observerOptions);
+    sections.forEach(section => { observer.observe(section); });
+  </script>
+
     <!-- Footer Section -->
-    <footer class="bg-white text-gray-800 py-12">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <!-- Footer Column 1: Logo & Description -->
-            <div class="space-y-4">
-                <div class="flex items-center space-x-2">
-                    <!-- Logo Image Placeholder (Smaller and round for Footer) -->
-                    <img src="logo.jpg" alt="Innova-Z Logo" class="h-10 w-10 rounded-full">
-                    <span class="text-2xl font-bold">Innova-Z</span>
-                </div>
-                <p class="text-sm">
-                    Empowering businesses with cutting-edge digital innovation. We transform visionary ideas into powerful digital realities through comprehensive end-to-end solutions.
-                </p>
-                <!-- Social Icons -->
-                <div class="flex space-x-4">
-                    <a href="https://www.instagram.com/innovaz_/" class="text-gray-500 hover:text-red-500 transition-colors duration-300 social-icon">
-                        <!-- Instagram Icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.851.071 4.385.201 6.551 2.367 6.75 6.75.059 1.267.071 1.647.071 4.851s-.012 3.584-.071 4.851c-.2 4.385-2.366 6.551-6.75 6.75-1.267.059-1.647.071-4.851.071s-3.584-.012-4.851-.071c-4.385-.2-6.551-2.366-6.75-6.75-.059-1.267-.071-1.647-.071-4.851s.012-3.584.071-4.851c.2-4.385 2.366-6.551 6.75-6.75zm0 2.217c-2.71 0-3.033.011-4.09.06-3.793.174-4.662 1.043-4.835 4.835-.049 1.057-.06 1.38-.06 4.09s.011 3.033.06 4.09c.173 3.793 1.042 4.662 4.835 4.835 1.057.049 1.38.06 4.09.06s3.033-.011 4.09-.06c3.793-.173 4.662-1.042 4.835-4.835.049-1.057.06-1.38.06-4.09s-.011-3.033-.06-4.09c-.173-3.793-1.042-4.662-4.835-4.835-1.057-.049-1.38-.06-4.09-.06zm0 1.954c2.27 0 4.113 1.843 4.113 4.113s-1.843 4.113-4.113 4.113-4.113-1.843-4.113-4.113 1.843-4.113 4.113-4.113zM12 7.747c-2.356 0-4.253 1.897-4.253 4.253s1.897 4.253 4.253 4.253 4.253-1.897 4.253-4.253-1.897-4.253-4.253-4.253zm5.725-4.68c-.689 0-1.248.559-1.248 1.248s.559 1.248 1.248 1.248 1.248-.559 1.248-1.248-.559-1.248-1.248-1.248z"/>
-                        </svg>
-                    </a>
-                    <a href="http://www.linkedin.com/company/innova-z" class="text-gray-500 hover:text-red-500 transition-colors duration-300 social-icon">
-                        <!-- LinkedIn Icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M22 0H2C.9 0 0 .9 0 2v20c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM8 19H5V8h3v11zM6.5 6.2c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM19 19h-3v-5c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5v5h-3V8h3v1.8c.6-.7 1.6-1.3 2.5-1.3 2.1 0 3.5 1.4 3.5 4v6.5z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-    
-            <!-- Footer Column 2: Quick Links -->
-            <div>
-                <h4 class="text-lg font-bold mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#home" class="hover:text-red-500 transition-colors duration-300">Home</a></li>
-                    <li><a href="#about" class="hover:text-red-500 transition-colors duration-300">About</a></li>
-                    <li><a href="#services" class="hover:text-red-500 transition-colors duration-300">Services</a></li>
-                    <li><a href="#contact" class="hover:text-red-500 transition-colors duration-300">Contact</a></li>
-                    <li><a href="privacy-policy.html" class="hover:text-red-500 transition-colors">Privacy Policy</a></li>
-                    <li><a href="terms-conditions.html" class="hover:text-red-500 transition-colors">Terms & Conditions</a></li>
-                </ul>
-            </div>
-    
-            <!-- Footer Column 3: Get In Touch -->
-            <div>
-                <h4 class="text-lg font-bold mb-4">Get In Touch</h4>
-                <ul class="space-y-2">
-                    <li>
-                        <a href="tel:+919330395305" class="flex items-center space-x-2 hover:text-red-500 transition-colors duration-300">
-                            <!-- New Phone Icon for Footer -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M17.5 4.5c0-.83-.67-1.5-1.5-1.5H8c-.83 0-1.5.67-1.5 1.5v15c0 .83.67 1.5 1.5 1.5h8c.83 0 1.5-.67 1.5-1.5v-15zM16 19.5h-7V5.5h7v14z"/>
-                            </svg>
-                            <span>+91 9330395305</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@innova-z.com" class="flex items-center space-x-2 hover:text-red-500 transition-colors duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10z"/>
-                            </svg>
-                            <span>info@innova-z.com</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Footer Column 4: Back to Top -->
-            <div class="md:text-right">
-                <a href="#" class="text-gray-500 hover:text-red-500 transition-colors duration-300 flex items-center justify-end">
-                    Back to Top
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 4L4 12h5v8h6v-8h5L12 4z"/>
-                    </svg>
-                </a>
-            </div>
+<footer class="bg-white text-gray-800 py-12" role="contentinfo">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <div class="space-y-4">
+        <div class="flex items-center space-x-2"><img src="logo.jpg" alt="Innova-Z logo" class="h-10 w-10 rounded-full"><span class="text-2xl font-bold">Innova-Z</span></div>
+        <p class="text-sm">Empowering businesses with cutting-edge digital innovation. We transform visionary ideas into powerful digital realities through comprehensive end-to-end solutions.</p>
         </div>
-        <div class="container mx-auto px-4 mt-8 text-center text-sm text-gray-500">
-            &copy; 2025 Innova-Z. All rights reserved.
+
+      <div>
+        <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-red-500 transition-colors duration-300">Home</a></li>
+          <li><a href="#about" class="hover:text-red-500 transition-colors duration-300">About</a></li>
+          <li><a href="#services" class="hover:text-red-500 transition-colors duration-300">Services</a></li>
+          <li><a href="#contact" class="hover:text-red-500 transition-colors duration-300">Contact</a></li>
+          <li><a href="privacy-policy.html" class="hover:text-red-500 transition-colors">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html" class="hover:text-red-500 transition-colors">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-bold mb-4">Get In Touch</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="tel:+919330395305" class="flex items-center space-x-2 hover:text-red-500 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.2c.28-.27.36-.66.24-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+              </svg>
+              <span>+91 9330395305</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@innova-z.com" class="flex items-center space-x-2 hover:text-red-500 transition-colors duration-300">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10z"/>
+              </svg>
+              <span>info@innova-z.com</span>
+            </a>
+          </li>
+        </ul>
+        <div class="flex space-x-4 mt-4">
+          <a href="https://www.instagram.com/innovaz_/" class="text-gray-500 hover:text-red-500 transition-colors duration-300 social-icon" target="_blank" rel="noopener noreferrer" aria-label="Innova-Z on Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.015 4.85.071 3.544.157 5.253 1.874 5.418 5.418.056 1.266.071 1.646.071 4.85s-.015 3.584-.071 4.85c-.165 3.544-1.874 5.253-5.418 5.418-1.266.056-1.646.071-4.85.071s-3.584-.015-4.85-.071c-3.544-.165-5.253-1.874-5.418-5.418-.056-1.266-.071-1.646-.071-4.85s.015-3.584.071-4.85c.165-3.544 1.874-5.253 5.418-5.418 1.266-.056 1.646-.071 4.85-.071zm0-2.163c-3.259 0-3.667.014-4.947.072-4.435.185-6.195 1.956-6.38 6.38-.057 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.185 4.435 1.956 6.195 6.38 6.38 1.28.057 1.688.072 4.947.072s3.667-.014 4.947-.072c4.435-.185 6.195-1.956 6.38-6.38.057-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.185-4.435-1.956-6.195-6.38-6.38-1.28-.058-1.688-.072-4.947-.072zm0 5.869c-3.411 0-6.181 2.77-6.181 6.181s2.77 6.181 6.181 6.181 6.181-2.77 6.181-6.181c0-3.411-2.77-6.181-6.181-6.181zm0 10.165c-2.209 0-3.98-1.771-3.98-3.98s1.771-3.98 3.98-3.98 3.98 1.771 3.98 3.98-1.771 3.98-3.98 3.98zm6.406-11.845c-.796 0-1.442.646-1.442 1.442s.646 1.442 1.442 1.442 1.442-.646 1.442-1.442c0-.796-.646-1.442-1.442-1.442z"/>
+            </svg>
+          </a>
+          <a href="http://www.linkedin.com/company/innova-z" class="text-gray-500 hover:text-red-500 transition-colors duration-300 social-icon" target="_blank" rel="noopener noreferrer" aria-label="Innova-Z on LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.532-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
         </div>
-    </footer>
-    
-    <script>
-        // Intersection Observer for scroll reveal effect
-        const sections = document.querySelectorAll('.reveal-on-scroll');
-        const observerOptions = {
-            root: null, // viewport
-            threshold: 0.1, // trigger when 10% of the element is visible
-            rootMargin: '0px'
-        };
+      </div>
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
-    </script>
-</body>
+      <div class="md:text-right">
+        <a href="#" class="text-gray-500 hover:text-red-500 transition-colors duration-300 flex items-center justify-end">
+          Back to Top
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 4L4 12h5v8h6v-8h5L12 4z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 mt-8 text-center text-sm text-gray-500">&copy; 2025 Innova-Z. All rights reserved.</div>
+</footer></body>
 </html>
-
-
-
